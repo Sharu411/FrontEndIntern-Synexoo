@@ -21,4 +21,4 @@ This project is an E-Commerce website designed to offer a seamless online shoppi
 - **JavaScript**: Interactivity and functionality, including form validations, cart updates, and more.
 
 ## Visit Here
-- Visit my <center><a href="https://sharu411.github.io/FrontEndIntern-Synexoo/home.html" target="_blank">E-Commerce Website</a></center>
+- Visit my <a href="https://sharu411.github.io/FrontEndIntern-Synexoo/home.html" target="_blank">E-Commerce Website</a>
