@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fruits and Vegitable</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Assets/logo.jpg" height="50px" width="50px" style="border-radius: 50%;" />
+            <h2>Fresh Food</h2>
+        </div>
+        <form action="" class="search-form">
+            <input id="search-box" type="search" placeholder="Search Product...">
+            <label for="serach-box" class="search">
+                <img src="./Assets/search.png" height="20px" width="25px" />
+            </label>
+        </form>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#reviews">Review</a>
+        </nav>
+        <div class="icons">
+            <div class="menu" id="menu_btn">
+                <img src="./Assets/menu_icon.png" />
+            </div>
+            <div class="cart" id="cart-btn">
+                <img src="./Assets/cart_icon.png" />
+            </div>
+            <div class="user" id="login-btn">
+                <img src="./Assets/login_icon.png" />
+            </div>
+        </div>
+        <div class="cart-page">
+            <div class="head">
+                <p>My cart</p>
+            </div>
+            <div id="cartItem">
+                <section id="cart">
+                    <ul id="cart-items"></ul>
+                    <button id="checkout-button">Checkout</button>
+                </section>
+            </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <p>Rs-<span id="total-price">0</span></p>
+            </div>
+        </div>
+        <form action="" class="login-form">
+            <h3>LOGIN NOW</h3><br>
+            <input type="email" placeholder="Your Email" class="box" id="email"><br><br>
+            <input type="password" placeholder="Your password" class="box" id="password"><br><br>
+            <p>Forget your password <a href="#">Click here</a></p>
+            <p>Don't have an account <a href="#">Create Now</a></p><br>
+            <input type="submit" value="login now" class="btn" onclick="login()">
+        </form>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <div class="info">
+                <h3>Healthy,Organic,Fresh</h3><br><br>
+                <h2>Fruits & Vegetables</h2><br><br>
+                <a href="#products" class="btn">Explore More</a>
+                <p class="desc">Fresh and daily harvested FRUITS & VEGETABLES from our native farmers</p>
+            </div>
+        </div>
+    </section>
+    <section class="product" id="products">
+        <h1>Products</h1>
+        <div class="Vegetables" id="vegetables">
+            <h2>Vegetables</h1>
+                <div class="page2">
+                    <div class="card" data-name="Brinjal" data-price="149">
+                        <a href="./brinjal.html"><img src="./Assets/brinjal.jfif" /></a>
+                        <hr />
+                        <h2>Brinjal</h2>
+                        <h3>6 units 27% </h3>
+                        <p>Rs-149</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Cabbage" data-price="200">
+                        <a href="./cabbage.html"><img src="./Assets/cabbage.jpg" /></a>
+                        <hr />
+                        <h2>Cabbage</h2>
+                        <h3>1kg</h3>
+                        <p>Rs-200</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Radish" data-price="500">
+                        <a href="./raddish.html"><img src="./Assets/radish.jfif" /></a>
+                        <hr />
+                        <h2>Radish</h2>
+                        <h3>1kg</h3>
+                        <p>Rs-500</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Chilli" data-price="250">
+                        <a href="./chilli.html"><img src="./Assets/chilli.jfif" /></a>
+                        <hr />
+                        <h2>Chilli</h2>
+                        <h3>100g</h3>
+                        <p>Rs-250</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Tomato" data-price="52">
+                        <a href="./tomato.html"><img src="./Assets/tomato.jpg" /></a>
+                        <hr />
+                        <h2>Tomato</h2>
+                        <h3>1 kg</h3>
+                        <p>Rs-52</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Cucumber" data-price="111">
+                        <a href="./cucumber.html"><img src="./Assets/cucumber.jpg" /></a>
+                        <hr />
+                        <h2>Cucumber</h2>
+                        <h3>800g - 1kg</h3>
+                        <p>Rs-111</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Potato" data-price="70">
+                        <a href="./potato.html"><img src="./Assets/potato.jfif" /></a>
+                        <hr />
+                        <h2>Potato</h2>
+                        <h3>1 kg</h3>
+                        <p>Rs-70</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Carrot" data-price="125">
+                        <a href="./carrot.html"><img src="./Assets/carrot.jfif" /></a>
+                        <hr />
+                        <h2>Carrot</h2>
+                        <h3>2kg</h3>
+                        <p>Rs-125</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                </div><br />
+        </div>
+        <div class="fruits" id="fruits">
+            <h2>Fruits</h1>
+                <div class="page2">
+                    <div class="card" data-name="Apple" data-price="149">
+                        <a href="./apple.html"><img src="./Assets/apple.jfif" /></a>
+                        <hr />
+                        <h2>Apple</h2>
+                        <h3>5 units</h3>
+                        <p>Rs-149</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Dragon" data-price="75">
+                        <a href="./dragon.html"><img src="./Assets/dragon.jpg" /></a>
+                        <hr />
+                        <h2>Dragon</h2>
+                        <h3>1kg</h3>
+                        <p>Rs-75</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Figs" data-price="115">
+                        <a href="./figs.html"><img src="./Assets/figs.jpg" /></a>
+                        <hr />
+                        <h2>Figs</h2>
+                        <h3>1kg</h3>
+                        <p>Rs-115</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Grapes" data-price="80">
+                        <a href="./grapes.html"><img src="./Assets/grapes.jpg" /></a>
+                        <hr />
+                        <h2>Grapes</h2>
+                        <h3>150g</h3>
+                        <p>Rs-80</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Mango" data-price="250">
+                        <a href="./mango.html"><img src="./Assets/mango.jfif" /></a>
+                        <hr />
+                        <h2>Mango</h2>
+                        <h3>1 kg</h3>
+                        <p>Rs-250</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Pomegranate" data-price="199">
+                        <a href="./pomogranate.html"><img src="./Assets/pomegranate.jfif" /></a>
+                        <hr />
+                        <h2>Pomegranate</h2>
+                        <h3>800g - 1kg</h3>
+                        <p>Rs-199</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Papaya" data-price="180">
+                        <a href="./papaya.html"><img src="./Assets/papaya.webp" /></a>
+                        <hr />
+                        <h2>Mango</h2>
+                        <h3>1 kg</h3>
+                        <p>Rs-180</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                    <div class="card" data-name="Strawberry" data-price="225">
+                        <a href="./strawberry.html"><img src="./Assets/strawberry.jfif" /></a>
+                        <hr />
+                        <h2>Strawberry</h2>
+                        <h3>500g</h3>
+                        <p>Rs-225</p>
+                        <button onclick="addtocart()">Add to Cart</button><br /><br />
+                    </div>
+                </div><br />
+        </div>
+    </section><br /><br />
+    <section id="reviews">
+        <div></div>
+        <center>
+            <h2>Reviews</h2>
+            <form id="review-form">
+                <label for="reviewer-name">Name:</label>
+                <input type="text" id="reviewer-name" required><br>
+                <label for="review-content">Review:</label>
+                <textarea id="review-content" required></textarea><br>
+                <button type="submit">Submit Review</button>
+            </form>
+            <ul id="review-list"></ul>
+        </center>
+    </section>
+    <section class="news">
+        <div class="newsletter-signup">
+            <h3>Subscribe to our Newsletter</h3><br>
+            <form id="newsletter-form">
+                <input type="email" id="emailnews" name="email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe" class="btn-news" onclick="news()">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <br /><br />
+            <h1 class="footer-heading">More Products</h1>
+            <div class="footer-items">
+                <div class="f-item">
+                    <a href="#fruits">Fruits Product</a>
+                    <ul>
+                        <li>Pomegranate</li>
+                        <li>Apple</li>
+                        <li>Muskmelon</li>
+                        <li>Jaman</li>
+                        <li>Cherry</li>
+                        <li>Guava</li>
+                        <li>Longan</li>
+                        <li>Banana</li>
+                        <li>Papaya</li>
+                        <li>Kiwi</li>
+                    </ul>
+                </div>
+                <div class="f-item">
+                    <a href="#vegetables">Vegetable Product</a>
+                    <ul>
+                        <li>Broccoli</li>
+                        <li>Brinjal</li>
+                        <li>Carrot</li>
+                        <li>Bitter Gourd</li>
+                        <li>Cabbage</li>
+                        <li>Beans</li>
+                        <li>Ridge Gourd</li>
+                        <li>Parwal</li>
+                        <li>Amaranthus</li>
+                        <li>Chow chow</li>
+                    </ul>
+                </div>
+            </div><br />
+            <br />
+        </div>
+        <div>
+            <ul class="contact">
+                <li>www.freshfood.com</li>
+                <li>044-2356-7895</li>
+                <li>freshfood23@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

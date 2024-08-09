@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Payment Process</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        
+       .payment{
+        margin-top:130px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 50px;
+       }
+       .head{
+        margin-top: 20px;
+        display: flex;
+        background-color: white;
+        color:black;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .head p{
+        color: red;
+        padding:5px;
+        border-radius: 5px;
+       }
+       .offer{
+        background-color: rgba(0, 128, 0, 0.397);
+        color:green;
+        width:50%;
+        padding:5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap:50px;
+        border-radius: 15px;
+       }
+       .btn{
+           background-color: white;
+           color:black;
+           border:1px solid rgba(128, 128, 128, 0.322);
+       }
+       .btn:hover{
+        background-color: white;
+        color: black;
+        box-shadow: 2px 2px 5px grey;
+        border: none;
+       }
+       .process{
+        margin:20px;
+        display:flex;
+        gap:10px;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+       .btn-group{
+         width:450px;
+       }
+       .dropdown-menu{
+        width:420px;
+        height:auto;
+        margin:25px;
+        text-align: center;
+        box-shadow: 2px 2px 5px grey;
+       }
+       .dropdown-menu input{
+        border:1px solid grey;
+       }
+       .btns{
+        background-color: gold;
+        color:white;
+        padding:10px;
+        border-radius: 10px;
+        width:150px;
+       }
+       .btns:hover{
+        box-shadow: 2px 2px 5px grey;
+       }
+       .dropdown-menu .p{
+        color:green;
+        font-size:12px;
+       }
+       .dropdown-menu .radio{
+        padding:20px;
+          text-align: left;
+       }
+       .dropdown-menu .card{
+        text-align: left;
+        padding:20px;
+       }
+       .dropdown-menu .card{
+        display: inline-block;
+        border:none;
+       }
+    </style>
+    <script>
+        function pay(){
+            alert("Your Product ordered Successfully...!!!")
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Assets/logo.jpg" height="50px" width="50px" style="border-radius: 50%;" />
+            <h2>Fresh Food</h2>
+        </div>
+        <form action="" class="search-form">
+            <input id="search-box" type="search" placeholder="Search Product...">
+            <label for="serach-box" class="search">
+                <img src="./Assets/search.png" height="20px" width="25px" />
+            </label>
+        </form>
+        <div class=navbar><a href="./home.html" class="homeProduct">Home</a></div>
+        <div class="icons">
+            <div class="menu" id="menu_btn">
+                <img src="./Assets/menu_icon.png" />
+            </div>
+            <div class="cart" id="cart-btn">
+                <img src="./Assets/cart_icon.png" />
+            </div>
+            <div class="user" id="login-btn">
+                <img src="./Assets/login_icon.png" />
+            </div>
+        </div>
+        <div class="cart-page">
+            <div class="head">
+                <p>My cart</p>
+            </div>
+            <div id="cartItem">
+                <section id="cart">
+                    <ul id="cart-items"></ul>
+                    <button id="checkout-button">Checkout</button>
+                </section>
+            </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <p>Rs-<span id="total-price">0</span></p>
+            </div>
+        </div>
+        <form action="" class="login-form">
+            <h3>User Account</h3><br>
+        </form>
+    </header>
+    <main class="payment">
+        <div class="head">
+            <h1>Payments</h1>
+            <p>100% secure</p>
+        </div>
+        <center><div class="offer">
+            <h3>50% offer</h3>
+            <p>Claim now with payement offer</p>
+        </div></center>
+        <div class="process">
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <h4>Credit/Debit/ATM</h4>
+                    <h5>Add and secure cards as per RBI guidelines</h5>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                    <div class="card">
+                        <label>Card Number: </label>
+                        <input type="number" placeholder="xxxx xxxx xxxx xxxx"><br>
+                        <label>Valid Thru: </label>
+                        <input type="text" placeholder="MM / YY"><br>
+                        <label>CVV: </label>
+                        <input type="text" placeholder="CVV"><br><br>
+                        <button class="btns" onclick="pay()">Pay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <h4>Net Banking</h4>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                    <div class="radio">
+                        <input type="radio" name="netbank">HDFC Bank<br>
+                        <input type="radio" name="netbank">ICICI Bank<br>
+                        <input type="radio" name="netbank">State Bank of India
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <h4>Cash on Delivery</h4>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                    <div>
+                        <p class="p">Due to handling costs,a nominal fee of Rs7 will be charged</p>
+                        <button class="btns" onclick="pay()">Place Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <h4>UPI</h4>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                    <div class="radio">
+                        <input type="radio" name="netbank">Google Pay<br>
+                        <input type="radio" name="netbank">Add new UPI ID
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <br /><br />
+            <h1 class="footer-heading">More Products</h1>
+            <div class="footer-items">
+                <div class="f-item">
+                    <a href="#fruits">Fruits Product</a>
+                    <ul>
+                        <li>Pomegranate</li>
+                        <li>Apple</li>
+                        <li>Muskmelon</li>
+                        <li>Jaman</li>
+                        <li>Cherry</li>
+                        <li>Guava</li>
+                        <li>Longan</li>
+                        <li>Banana</li>
+                        <li>Papaya</li>
+                        <li>Kiwi</li>
+                    </ul>
+                </div>
+                <div class="f-item">
+                    <a href="#vegetables">Vegetable Product</a>
+                    <ul>
+                        <li>Broccoli</li>
+                        <li>Brinjal</li>
+                        <li>Carrot</li>
+                        <li>Bitter Gourd</li>
+                        <li>Cabbage</li>
+                        <li>Beans</li>
+                        <li>Ridge Gourd</li>
+                        <li>Parwal</li>
+                        <li>Amaranthus</li>
+                        <li>Chow chow</li>
+                    </ul>
+                </div>
+            </div><br />
+            <br />
+        </div>
+        <div>
+            <ul class="contact">
+                <li>www.freshfood.com</li>
+                <li>044-2356-7895</li>
+                <li>freshfood23@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

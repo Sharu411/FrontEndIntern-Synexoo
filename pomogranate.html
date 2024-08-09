@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pomegranate</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Assets/logo.jpg" height="50px" width="50px" style="border-radius: 50%;" />
+            <h2>Fresh Food</h2>
+        </div>
+        <form action="" class="search-form">
+            <input id="search-box" type="search" placeholder="Search Product...">
+            <label for="serach-box" class="search">
+                <img src="./Assets/search.png" height="20px" width="25px" />
+            </label>
+        </form>
+        <div class=navbar><a href="./home.html" class="homeProduct">Home</a></div>
+        <div class="icons">
+            <div class="menu" id="menu_btn">
+                <img src="./Assets/menu_icon.png" />
+            </div>
+            <div class="cart" id="cart-btn">
+                <img src="./Assets/cart_icon.png" />
+            </div>
+            <div class="user" id="login-btn">
+                <img src="./Assets/login_icon.png" />
+            </div>
+        </div>
+        <div class="cart-page">
+            <div class="head">
+                <p>My cart</p>
+            </div>
+            <div id="cartItem">
+                <section id="cart">
+                    <ul id="cart-items"></ul>
+                    <button id="checkout-button">Checkout</button>
+                </section>
+            </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <p>$<span id="total-price">0</span></p>
+            </div>
+        </div>
+        <form action="" class="login-form">
+            <h3>User Account</h3><br>
+        </form>
+    </header>
+    <section class="images">
+        <div class="slider">
+            <h1>Pomegranate</h1>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="img1" checked>
+                <input type="radio" name="radio-btn" id="img2">
+                <input type="radio" name="radio-btn" id="img3">
+                <input type="radio" name="radio-btn" id="img4">
+                <div class="slide first">
+                    <img src="./Assets/pomegranate1.jfif">
+                </div>
+                <div class="slide">
+                    <img src="./Assets/pomegranate2.jfif">
+                </div>
+                <div class="slide">
+                    <img src="./Assets/pomegranate3.jfif">
+                </div>
+                <div class="slide">
+                    <img src="./Assets/pomegranate4.jfif">
+                </div>
+            </div>   
+            <div class="dots">
+                <label for="img1" class="control"></label>
+                <label for="img2" class="control"></label>
+                <label for="img3" class="control"></label>
+                <label for="img4" class="control"></label>
+            </div>
+        </div>
+        <div class="details">
+            <marquee>offer 2%</marquee><br><br>
+            <h2>Fresh Pomegranate</h2>
+            <div class="ratings">
+                <img src="./Assets/star.png" class="star">
+                <img src="./Assets/star.png" class="star">
+                <img src="./Assets/star.png" class="star">
+                <img src="./Assets/star.png" class="star">
+                <img src="./Assets/star.png" class="star">
+                <p>5/5 ratings</p>
+            </div>
+            <h3>Lowest price in 30 days</h3>
+            <p>Free delivary</p>
+            <h4>Rs/199  - 800g to 1kg</h4><br>
+            <a href="payment.html">Buy Now</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <br /><br />
+            <h1 class="footer-heading">More Products</h1>
+            <div class="footer-items">
+                <div class="f-item">
+                    <a href="#fruits">Fruits Product</a>
+                    <ul>
+                        <li>Pomegranate</li>
+                        <li>Apple</li>
+                        <li>Muskmelon</li>
+                        <li>Jaman</li>
+                        <li>Cherry</li>
+                        <li>Guava</li>
+                        <li>Longan</li>
+                        <li>Banana</li>
+                        <li>Papaya</li>
+                        <li>Kiwi</li>
+                    </ul>
+                </div>
+                <div class="f-item">
+                    <a href="#vegetables">Vegetable Product</a>
+                    <ul>
+                        <li>Broccoli</li>
+                        <li>Brinjal</li>
+                        <li>Carrot</li>
+                        <li>Bitter Gourd</li>
+                        <li>Cabbage</li>
+                        <li>Beans</li>
+                        <li>Ridge Gourd</li>
+                        <li>Parwal</li>
+                        <li>Amaranthus</li>
+                        <li>Chow chow</li>
+                    </ul>
+                </div>
+            </div><br />
+            <br />
+        </div>
+        <div>
+            <ul class="contact">
+                <li>www.freshfood.com</li>
+                <li>044-2356-7895</li>
+                <li>freshfood23@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
